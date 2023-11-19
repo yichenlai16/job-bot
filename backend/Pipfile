@@ -1,0 +1,20 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+Scrapy = "*"
+Django = "*"
+djangorestframework = "*"
+djangorestframework-simplejwt ="*"
+django_filter = "*"
+sqlalchemy = "*"
+requests = "*"
+pipreqs = "*"
+python-dotenv = "*"
+django-webpack-loader = "*"
+psycopg2-binary = "*"
+django-cors-headers = "*"

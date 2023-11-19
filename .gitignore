@@ -1,0 +1,29 @@
+#VSCode files
+**/.vscode
+*.code-workspace
+
+#static file
+
+static/
+
+
+
+#Node
+frontend/node_modules
+
+#DEV
+.route
+.venv/
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+
+#scrapy temp files
+scrapy/.scrapy
+scrapy/data/
+
+*.log
+*.pyc
+backend/.env
+frontend/ssh/
