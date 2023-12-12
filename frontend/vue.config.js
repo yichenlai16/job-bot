@@ -32,14 +32,24 @@ const fs = require("fs");
 module.exports = {
   runtimeCompiler: true,
   publicPath: "/",
+  // configureWebpack: {
+  //   watch: true,
+  // },
   devServer: {
-    // public: "xxx.com",
+    public: "home.yichenlai.com",
     host: "0.0.0.0",
     disableHostCheck: true,
-    // https: true,
-    // key: fs.readFileSync("./ssh/private.key"),
-    // cert: fs.readFileSync("./ssh/certificate.crt"),
-    // ca: fs.readFileSync("./ssh/ca_bundle.crt"),
+    watchOptions: {
+      ignored: /node_modules/,
+      aggregateTimeout: 300,
+      poll: 1000,
+    },
+    https: true,
+    // key: fs.readFileSync("./ssh/key.pem"),
+    // cert: fs.readFileSync("./ssh/cert.pem"),
+    key: fs.readFileSync("./ssh/private.key"),
+    cert: fs.readFileSync("./ssh/certificate.crt"),
+    ca: fs.readFileSync("./ssh/ca_bundle.crt"),
     proxy: {
       "/api": {
         // target: `http://localhost:8000/api`,
