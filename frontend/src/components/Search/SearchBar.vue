@@ -39,7 +39,7 @@
         <workPeriodPicker v-model:period="period"></workPeriodPicker>
         <workExpPicker v-model:exp="exp"></workExpPicker>
         <salaryPicker v-model:salaryL="salaryL"></salaryPicker>
-        <div style="height:5px;"></div>
+        <div style="height: 5px"></div>
         <van-row gutter="20" type="flex" justify="center">
           <van-col span="8">
             <van-button @click="detailSearch" type="primary" plain size="large"
@@ -47,7 +47,11 @@
             >
           </van-col>
           <van-col span="8">
-            <van-button @click="detailShow = false" type="primary" plain size="large"
+            <van-button
+              @click="detailShow = false"
+              type="primary"
+              plain
+              size="large"
               >關閉</van-button
             >
           </van-col>

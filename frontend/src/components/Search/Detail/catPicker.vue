@@ -22,11 +22,7 @@
       <div class="van-cascader__header">
         <h2 class="van-cascader__title"></h2>
         <i
-          class="
-            van-badge__wrapper
-            van-icon van-icon-cross
-            van-cascader__close-icon
-          "
+          class="van-badge__wrapper van-icon van-icon-cross van-cascader__close-icon"
           ><!----><!----><!----></i
         >
       </div>

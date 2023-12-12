@@ -202,7 +202,6 @@ export default {
       visible.value = true;
     };
 
-
     const loadMore = async (url) => {
       const params = new URL(url);
       url = "api/job/?" + params.searchParams.toString();

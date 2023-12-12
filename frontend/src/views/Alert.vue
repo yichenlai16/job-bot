@@ -60,7 +60,7 @@ export default {
     const getNotifyToken = () => {
       console.log("hi");
       window.location.href =
-        "https://notify-bot.line.me/oauth/authorize?response_type=code&client_id=9fyAdKInMP3Si136avB3DR&redirect_uri=https://yichenlai.com/callback&scope=notify&state=state";
+        "https://notify-bot.line.me/oauth/authorize?response_type=code&client_id=9fyAdKInMP3Si136avB3DR&redirect_uri=https://home.yichenlai.com/callback&scope=notify&state=state";
     };
 
     const testNotify = () => {

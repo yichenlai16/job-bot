@@ -1,11 +1,12 @@
 <template>
   <topBar />
 
-  <a-table 
-  :dataSource="dataSource" 
-  :columns="columns"
-  bordered = true
-  size = "small" />
+  <a-table
+    :dataSource="dataSource"
+    :columns="columns"
+    bordered="true"
+    size="small"
+  />
 </template>
 
 <script>

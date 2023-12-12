@@ -1,6 +1,4 @@
-<template>
-  <div></div>
-</template>
+<template>Redirecting...</template>
 
 <script>
 import { ref, onMounted } from "vue";
@@ -15,9 +13,9 @@ export default {
     const route = useRoute();
     const router = useRouter();
 
-    onMounted(async () => {
+    const getAlertData = async () => {
       try {
-        const response = await axios.get("/api/alert/" + route.params.id);
+        const response = await axios.get("/api/alert/" + `${route.params.id}`);
         console.log(route.params.id);
         alert.value = response.data;
 
@@ -36,6 +34,12 @@ export default {
       } catch (error) {
         console.error("Error fetching alert data:", error);
       }
+    };
+
+    onMounted(() => {
+      console.log(route.params.id);
+
+      getAlertData();
     });
 
     return {
